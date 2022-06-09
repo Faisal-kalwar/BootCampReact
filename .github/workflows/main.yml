@@ -35,7 +35,7 @@ jobs:
    
    #creating yarn
       - name: Creating yarn
-        run: yarn run
+        run: yarn run v1.22.18
   
   # install surge
       - name: installing surge

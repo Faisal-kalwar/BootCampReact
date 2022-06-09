@@ -32,6 +32,10 @@ jobs:
         uses: Borales/actions-yarn@v3.0.0
         with:
           cmd: install
+    
+  # Creating build
+      - name: Creating yarn
+        run: yarn build
   
   # install surge
       - name: installing surge

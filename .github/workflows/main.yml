@@ -35,7 +35,7 @@ jobs:
     
   # Creating build
       - name: Creating build
-        run: yarn build
+        run:  yarn build 
   
   # install surge
       - name: installing surge

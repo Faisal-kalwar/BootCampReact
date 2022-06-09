@@ -34,8 +34,8 @@ jobs:
           cmd: install
    
    #creating yarn
-      - name: Creating build
-        run: sudo yarn build
+      - name: Creating yarn
+        run: yarn run
   
   # install surge
       - name: installing surge

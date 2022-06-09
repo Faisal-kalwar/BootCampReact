@@ -32,10 +32,10 @@ jobs:
         uses: Borales/actions-yarn@v3.0.0
         with:
           cmd: install
-   
-   #creating yarn
-      - name: Creating yarn
-        run: yarn run v1.22.18
+    
+  # Creating build
+      - name: Creating build
+        run: yarn build
   
   # install surge
       - name: installing surge
@@ -43,4 +43,4 @@ jobs:
         
   # depolying on surge
       - name: Deploying on surge
-        run: ./bulid https://tidy-branch.surge.sh/ --token "5aa9799c2766930575a391c0ca4ab1e7"
+        run: surge ./build https://tidy-branch.surge.sh/ --token "5aa9799c2766930575a391c0ca4ab1e7"

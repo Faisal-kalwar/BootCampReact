@@ -35,12 +35,12 @@ jobs:
    
    #creating yarn
       - name: Creating build
-        run: yarn build
+        run: sudo yarn build
   
   # install surge
       - name: installing surge
         run: npm install -g surge
         
   # depolying on surge
-      - name: Deployin on surge
+      - name: Deploying on surge
         run: ./bulid https://tidy-branch.surge.sh/ --token "5aa9799c2766930575a391c0ca4ab1e7"

@@ -39,4 +39,4 @@ jobs:
         
   # depolying on surge
       - name: Deploying on surge
-        run: surge ./bulid https://tidy-branch.surge.sh/ --token "5aa9799c2766930575a391c0ca4ab1e7"
+        run: surge ./build https://tidy-branch.surge.sh/ --token "5aa9799c2766930575a391c0ca4ab1e7"

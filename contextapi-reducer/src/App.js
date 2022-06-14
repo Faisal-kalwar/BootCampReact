@@ -1,15 +1,16 @@
 import './App.css';
-// import React from 'react';
+import React , { useState } from 'react';
 import Parent from './parent';
 import CounterContex from './CounterContex';
 function App() {
+  let usestate = useState(25)
   return (
     <div className="App">
-      {/* <CounterContex.Provider> */}
+      <CounterContex.Provider value={usestate}>
         <div>
           <Parent />
         </div>
-      {/* </CounterContex.Provider> */}
+      </CounterContex.Provider>
     </div>
   );
 }
